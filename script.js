@@ -49,3 +49,27 @@ function returnSum(num1, num2, num3) {
 }
 console.log(returnSum(5, 6, 4));
 //Output: 15
+
+/* Arrays
+11. Write a Function to Print the Elements of an Array:
+Write a Function called printArray that accepts an Array as an argument, and contains a loop that will print each value of the passed in Array.
+•	Do not edit (or hardcode the change to) the Array in its current state.
+•	You must edit by using a method of the Array object.
+•	Note: Arrays are mutable in JavaScript, so you can use a method to add a new name to an Array.
+•	Hint: You can use the length property to find the length of the Array
+*/
+
+myArray = [1,2,3,4,5];
+
+function printArray(arr) {
+    for(i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+    }
+}
+
+printArray(myArray);
+
+function solveQuadratic(a, b, c) {    
+    let discriminant = b * b - 4 * a * c;    
+    if (discriminant < 0) {      
+        return [];      }    let root1 = (-b + Math.sqrt(discriminant)) / (2 * a);    let root2 = (-b - Math.sqrt(discriminant)) / (2 * a);    return [root1, root2];    }  let result = solveQuadratic(1, -3, 2);    console.log(result);  
